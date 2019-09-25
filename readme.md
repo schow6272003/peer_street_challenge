@@ -1,9 +1,8 @@
 # PeerStreet Population Estimate API Challenge
 This repository contains  code base to implement the population estimate API challenge given by PeerStreet. A Restful API is built on Node.js and a gem is created to act as Ruby client to access the API. Also, I built a demo site with React + Rails to showcase the practice application of the API.
 
-<detail>
+<details>
 <summary>PeerStreet Coding Challenge</summary>
-
 ## Intro
 
 Hi! Thanks for applying at PeerStreet and taking the time to take on this coding challenge. We believe it’s very important to evaluate every candidate’s technical ability, but we also want to simulate a realistic challenge and environment you may encounter at our office. Optimizing algorithms on a whiteboard under a time constraint isn’t usually the case. As such, we’d like to give you an opportunity to work at your own pace on a problem that is actually relevant to PeerStreet and then discuss your solution during the onsite.
@@ -126,7 +125,7 @@ As your deliverable to PeerStreet, please provide:
 
 1. All code that you produced uploaded to this repo
 1. Publicly accessible endpoint to the API
-</detail>
+</details>
 ---
 ##### Demo Site:
 Besides zip code, CBSA code and MSA name fields can be used to query the records.
