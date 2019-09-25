@@ -32,7 +32,8 @@ https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip
 
 ## Installation and setup on local machine
 
-### API Node Server Setup:
+<details>
+<summary>API Node Server Setup</summary>
 
 #### 1. Install and Run PostgreSQL
 Refer to Postgres documentation for setup instructions on local machine.
@@ -132,3 +133,4 @@ node imports/import_mongodb.js
 ```
 nodemon app.js
 ```
+</details>
