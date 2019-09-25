@@ -163,7 +163,8 @@ https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip
 <details>
 <summary>API Node Server Setup:</summary>
 
- API Node Git repository for more info: https://github.com/schow6272003/ps_api 
+
+API Node Git repository for more info: https://github.com/schow6272003/ps_api 
 
 #### 1. Install and Run PostgreSQL
 Refer to Postgres documentation for setup instructions on local machine.
@@ -268,7 +269,8 @@ nodemon app.js
 <details>
 <summary>Ruby Client Setup:</summary>
 
- Ruby Client Git repository for more info: https://github.com/schow6272003/ps_gem.git
+
+Ruby Client Git repository for more info: https://github.com/schow6272003/ps_gem.git
 
 #### Add the following line to Gemile on Rails app:
 ```
