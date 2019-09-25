@@ -30,10 +30,11 @@ https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip
    - Heroku *My prefer platform would be AWS Beanstalk, but Heroku was chosen instead for this project due to time constraint.
 
 
-## Installation and setup on local machine
+## Set up on local machine
 
 <details>
-<summary>### API Node Server Setup</summary>
+<summary>API Node Server Setup:</summary>
+API Node Git repository for more info: https://github.com/schow6272003/ps_api 
 
 #### 1. Install and Run PostgreSQL
 Refer to Postgres documentation for setup instructions on local machine.
@@ -132,5 +133,19 @@ node imports/import_mongodb.js
 - ##### Run Node.js Server
 ```
 nodemon app.js
+```
+</details>
+
+<details>
+<summary>Ruby Client Setup:</summary>
+Ruby Client Git repository for more info: https://github.com/schow6272003/ps_gem.git
+
+#### Add the following line to Gemile on Rails app:
+```
+gem 'ps_pop_client',  :git => 'https://github.com/schow6272003/ps_gem.git'
+```
+#### Run
+```
+bundle install
 ```
 </details>
