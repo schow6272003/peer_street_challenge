@@ -3,6 +3,7 @@ This repository contains  code base to implement the population estimate API cha
 
 <details>
 <summary>PeerStreet Coding Challenge</summary>
+
 ## Intro
 
 Hi! Thanks for applying at PeerStreet and taking the time to take on this coding challenge. We believe it’s very important to evaluate every candidate’s technical ability, but we also want to simulate a realistic challenge and environment you may encounter at our office. Optimizing algorithms on a whiteboard under a time constraint isn’t usually the case. As such, we’d like to give you an opportunity to work at your own pace on a problem that is actually relevant to PeerStreet and then discuss your solution during the onsite.
