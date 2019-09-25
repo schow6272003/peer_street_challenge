@@ -1,5 +1,4 @@
-# PeerStreet Population Estimate API Challenge
-This repository contains  code base to implement the population estimate API challenge given by PeerStreet. A Restful API is built on Node.js and a gem is created to act as Ruby client to access the API. Also, I built a demo site with React + Rails to showcase the practice application of the API.
+This repository contains code base to implement the population estimate API challenge given by PeerStreet. A Restful API is built on Node.js and a Ruby gem is created to act as Ruby client to access the API. Also, I built a demo site with React + Rails to showcase the practice application of the API.
 
 <details>
 <summary>PeerStreet Coding Challenge</summary>
@@ -279,6 +278,20 @@ gem 'ps_pop_client',  :git => 'https://github.com/schow6272003/ps_gem.git'
 #### Run
 ```
 bundle install
+```
+</details>
+
+<details>
+<summary>Rails Up Setup:</summary>
+
+Rails App Git repository for more info: 'https://github.com/schow6272003/ps_app'
+
+#### Setup and Run the app
+```
+git clone 'https://github.com/schow6272003/ps_app'
+cd ps_app
+bundle install
+rails s
 ```
 </details>
 
