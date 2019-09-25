@@ -1,37 +1,36 @@
-#PeerStreet Population Estimate API Challenge
-##About
+# PeerStreet Population Estimate API Challenge
 This repository contains  code base to implement the population estimate API challenge given by PeerStreet(https://github.com/schow6272003/peer_street_api_doc).  A Restful API is built on Node.js and a gem is created to act as Ruby client to access the API. Also, I built a demo site with React + Rails to showcase the practice application of the API.
 
 ---
-#####Demo Site:
+##### Demo Site:
 Besides zip code, CBSA code and MSA name fields can be used to query the records.
 https://pstreet-app.herokuapp.com/
 
 
-#####API Endpoint:
+##### API Endpoint:
 https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip_codes[]=79607
 
-###Stack
+### Stack
 ---
-####Server: 
+#### Server: 
    - Node.js
    - Postgres 
    - MongoDB
    - Redis
 
-####Ruby Client: 
+#### Ruby Client: 
   - Ruby Gem 
 
-####Demo Site: 
+#### Demo Site: 
    - React.js
    - Database.js
    - Selectize.js
    - Ruby On Rails
-####Cloud Platform: 
+#### Cloud Platform: 
    - Heroku *My prefer platform would be AWS Beanstalk, but Heroku was chosen instead for this project due to time constraint.
 
 
-##Installation and setup on local machine
+## Installation and setup on local machine
 
 ### API Node Server Setup:
 
@@ -48,16 +47,16 @@ Refer to Postgres documentation for setup instructions on local machine.
 https://redis.io/documentation
 
 ### 4. Setup and Run Node.js
-- #### a pull base code from git repository
+- #### pull base code from git repository
 		```
 		git clone https://github.com/schow6272003/ps_api
 		cd ps_api
 		```
-- #### b. Install Node dependencies
+- #### Install Node dependencies
 ```
 npm install
  ```
-- #### c. Create .env file
+- #### Create .env file
 ```
 DB= (Postgres database name)
 DB_HOST= (Postgres database host)
@@ -70,7 +69,7 @@ MONGODB= (Mongodb database name)
 MONGDB_COLLECTION=(Mongodb collection )
 MONGODB_HOST=(Mongodb database host)
 ```
-- #### d. Setup Config.js for Sequelizer
+- #### Setup Config.js for Sequelizer
 ```javascript
 require('dotenv').config();
 module.exports = {
@@ -99,7 +98,7 @@ module.exports = {
   }
 };
 ```
-- ### e. Setup .sequelizerc 
+- ### Setup .sequelizerc 
 ```javascript
 const path = require('path');
 module.exports = {
@@ -107,7 +106,7 @@ module.exports = {
 }
 ```
 
-- ### f. Setup .babelrc for Babel 
+- ### Setup .babelrc for Babel 
 ```javascript
 {
   "presets": [
@@ -116,20 +115,20 @@ module.exports = {
 }
 ```
 
-- ### g. Run migrations on Postgres with Sequelizer
+- ### Run migrations on Postgres with Sequelizer
 ```
 npx sequelize db:migrate
 ```
 
-- ### h. Fetch CBSA data remotely to Postgres database
+- ### Fetch CBSA data remotely to Postgres database
 ```
 node imports/import_postgres.js
 ```
-- ### i. Import and parse CBSA data to Mongodb from Postgres
+- ### Import and parse CBSA data to Mongodb from Postgres
 ```
 node imports/import_mongodb.js
 ```
-- ### i Run Node.js Server
+- ### Run Node.js Server
 ```
 nodemon app.js
 ```
