@@ -42,21 +42,21 @@ https://www.postgresql.org/docs/
 Refer to Postgres documentation for setup instructions on local machine.
 https://docs.mongodb.com/
 
-### 3. Install and Run Redis 
+#### 3. Install and Run Redis 
 Refer to Postgres documentation for setup instructions on local machine.
 https://redis.io/documentation
 
-### 4. Setup and Run Node.js
-- #### pull base code from git repository
-		```
-		git clone https://github.com/schow6272003/ps_api
-		cd ps_api
-		```
-- #### Install Node dependencies
+#### 4. Setup and Run Node.js
+- ##### Pull base code from git repository to your local machine
+```
+git clone https://github.com/schow6272003/ps_api
+cd ps_api
+```
+- ##### Install Node dependencies
 ```
 npm install
- ```
-- #### Create .env file
+```
+- ##### Create .env file
 ```
 DB= (Postgres database name)
 DB_HOST= (Postgres database host)
@@ -69,7 +69,7 @@ MONGODB= (Mongodb database name)
 MONGDB_COLLECTION=(Mongodb collection )
 MONGODB_HOST=(Mongodb database host)
 ```
-- #### Setup Config.js for Sequelizer
+- ##### Setup Config.js for Sequelizer
 ```javascript
 require('dotenv').config();
 module.exports = {
@@ -98,7 +98,7 @@ module.exports = {
   }
 };
 ```
-- ### Setup .sequelizerc 
+- ##### Setup .sequelizerc 
 ```javascript
 const path = require('path');
 module.exports = {
@@ -106,7 +106,7 @@ module.exports = {
 }
 ```
 
-- ### Setup .babelrc for Babel 
+- ##### Setup .babelrc for Babel 
 ```javascript
 {
   "presets": [
@@ -115,20 +115,20 @@ module.exports = {
 }
 ```
 
-- ### Run migrations on Postgres with Sequelizer
+- ##### Run migrations on Postgres with Sequelizer
 ```
 npx sequelize db:migrate
 ```
 
-- ### Fetch CBSA data remotely to Postgres database
+- ##### Fetch CBSA data remotely to Postgres database
 ```
 node imports/import_postgres.js
 ```
-- ### Import and parse CBSA data to Mongodb from Postgres
+- ##### Import and parse CBSA data to Mongodb from Postgres
 ```
 node imports/import_mongodb.js
 ```
-- ### Run Node.js Server
+- ##### Run Node.js Server
 ```
 nodemon app.js
 ```
