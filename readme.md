@@ -278,7 +278,7 @@ Ruby Client Git repository for more info: [Link](https://github.com/schow6272003
 
 #### Add the following line to Gemile on Rails app:
 ```
-gem 'ps_pop_client',  :git => 'https://github.com/schow6272003/ps_gem.git'
+gem 'ps_pop_client'
 ```
 #### Run
 ```
@@ -289,11 +289,11 @@ bundle install
 <details>
 <summary>Rails Up Setup:</summary>
 
-Rails App Git repository for more info: 'https://github.com/schow6272003/ps_app'
+Rails App Git repository for more info: [Link]('https://github.com/schow6272003/ps_app')
 
 #### Setup and Run the app
 ```
-git clone [Link](https://github.com/schow6272003/ps_app)
+git clone https://github.com/schow6272003/ps_app
 cd ps_app
 bundle install
 rails s
