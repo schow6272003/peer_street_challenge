@@ -137,6 +137,11 @@ https://pstreet-app.herokuapp.com/
 ##### API Endpoint:
 https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip_codes[]=79607
 
+##### Repositories:
+  - [API Node Server](https://github.com/schow6272003/ps_api)
+  - [Ruby Client Gem](https://github.com/schow6272003/ps_gem.git)
+  - [Demo Site](https://github.com/schow6272003/ps_app)
+  
 ### Stack
 ---
 #### Server: 
@@ -153,8 +158,8 @@ https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip
    - Database.js
    - Selectize.js
    - Ruby On Rails
-#### Cloud Platform: 
-   - Heroku *My prefer platform would be AWS Beanstalk, but Heroku was chosen instead for this project due to time constraint.
+#### Hosting 
+   - Heroku
 
 
 ## Set up on local machine
@@ -163,7 +168,7 @@ https://pstreet-api.herokuapp.com/api/cbsa?cbsa_ids[]=15540&cbsa_ids[]=11260&zip
 <summary>API Node Server Setup:</summary>
 
 
-API Node Git repository for more info: https://github.com/schow6272003/ps_api 
+API Node Server Git repository for more info: [Link](https://github.com/schow6272003/ps_api)
 
 #### 1. Install and Run PostgreSQL
 Refer to Postgres documentation for setup instructions on local machine.
@@ -269,7 +274,7 @@ nodemon app.js
 <summary>Ruby Client Setup:</summary>
 
 
-Ruby Client Git repository for more info: https://github.com/schow6272003/ps_gem.git
+Ruby Client Git repository for more info: [Link](https://github.com/schow6272003/ps_gem.git)
 
 #### Add the following line to Gemile on Rails app:
 ```
@@ -288,7 +293,7 @@ Rails App Git repository for more info: 'https://github.com/schow6272003/ps_app'
 
 #### Setup and Run the app
 ```
-git clone 'https://github.com/schow6272003/ps_app'
+git clone [Link](https://github.com/schow6272003/ps_app)
 cd ps_app
 bundle install
 rails s
